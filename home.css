@@ -7,6 +7,18 @@ p{
     font-family: arial;
 }
 
+.banner {
+    background-color: grey;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.banner-txt{
+    margin: 0;
+    padding: 3px;
+}
+
 .basic-info{
     display: flex;
 }
