@@ -1,0 +1,97 @@
+.print {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    z-index: 1000;
+    bottom: 20px;
+    right: 20px;
+}
+
+.print-btn {
+    background-color: lightblue;
+    color: white;
+    border: none;
+    height: 100px;
+    width: 100px;
+    padding: 12px 24px;
+    font-size: 30px;
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.print-btn:hover {
+    background-color: lightskyblue;
+    transform: translateY(-1px);
+}
+
+.print-btn:active {
+    transform: translateY(1px);
+}
+
+@media print {
+    .print {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    .contents {
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    * {
+        box-shadow: none !important;
+        background: transparent !important;
+    }
+    
+    h1, h2, h3, h4, h5, h6, p, div, span {
+        color: black !important;
+    }
+    
+/* Page break controls */
+    .profile_background,
+    .contacts,
+    .education,
+    .staq,
+    .projects,
+    .CCAs,
+    .skills, 
+    .languages {
+        page-break-inside: avoid;
+        margin-bottom: 20px;
+    }
+
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .whatsapp,
+    .instagram {
+        display: none;
+    }
+    
+    .progress-bar-container {
+        border: 1px solid black !important;
+        background-color: white !important;
+    }
+    
+    .progress-segment.filled {
+        background-color: black !important;
+    }
+    
+    .progress-segment.empty {
+        background-color: white !important;
+        border: 1px solid black !important;
+    }
+}

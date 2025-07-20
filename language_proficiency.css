@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.proficiency-section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.language-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.proficiency-level {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    display: flex;
+}
+
+.progress-segment {
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.filled {
+    background-color: #333;
+}
+
+.empty {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-left: none;
+}
+
+.empty:first-child {
+    border-left: 1px solid #ccc;
+}
+
+.performance-text {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* Different colors for different proficiency levels */
+.proficient .filled {
+    background-color: #28a745;
+}
+
+.fluent .filled {
+    background-color: #007bff;
+}
+
+.basic .filled {
+    background-color: #ffc107;
+}
+
+.native .filled {
+    background-color: #6f42c1;
+}

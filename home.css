@@ -1,0 +1,188 @@
+body{
+    display: flex;
+    flex-direction: row;
+    font-family: arial;
+}
+p{
+    font-family: arial;
+}
+
+.basic-info{
+    display: flex;
+}
+
+.Personal{
+    flex: 1;
+    margin-top: 25px;
+    padding-left: 100px;
+}
+
+.contacts{
+    flex: 1;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.contact_info{
+    padding: 0px;
+    margin: 5px;
+}
+.whatsapp{
+    margin-top: 10px;
+    margin-right: 15px;
+    width: 50px;
+}
+.whatsapp:hover{
+    cursor: pointer;
+}
+.instagram{
+    margin-right: 15px;
+    width: 50px;
+    border-radius: 10px;
+}
+.instagram:hover{
+    cursor: pointer;
+}
+.education{
+    background-color: whitesmoke;
+}
+.education_contents{
+    margin-left: 100px;
+    margin-bottom: 25px;
+}
+.edu_left{
+    display: flex;
+    flex: 3;
+}
+.edu_title{
+    padding-top: 25px;
+    margin-bottom: 10px;
+}
+.edu_data{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.qualification_edu{
+    flex: 1.5;
+}
+.institute{
+    flex: 1.5;
+}
+.course{
+    flex: 2;
+}
+.date_edu{
+    flex: 2;
+    margin-right: 75px;
+
+}
+.edu_right{
+    justify-items: right;
+}
+.staq{
+    margin-left: 100px;
+    background-color: white;
+}
+.staq_title{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.staq_contents{
+    display: flex;
+}
+.tnc{
+    flex: 2;
+}
+.staq_right{
+    flex: 1;
+    justify-items: right;
+    display: flex;
+}
+.date_staq{
+    flex: 1;
+}
+.evi{
+    flex: 1;
+    margin-right: 50px
+}
+.proof_btn{
+    width: 100px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: lightblue;
+    border-color: lightblue;
+    margin-top: -2px;
+    margin-bottom: 10px;
+}
+.proof_btn:hover{
+    cursor: pointer;
+}
+.projects{
+    background-color: whitesmoke;
+    margin-top: 0px;
+}
+.projects_contents{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.projects_title{
+    margin-bottom: 5px;
+}
+.languages {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 25px;
+}
+.CCAs {
+    background-color: whitesmoke;
+    padding-bottom: 30px;
+}
+
+.CCA-title {
+    margin-left: 100px;
+    padding-top: 25px;
+    margin-bottom: 0px;
+}
+
+.CCA-content {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.CCA-details {
+    display: flex;
+    /* margin-bottom: 20px; */
+}
+
+.cca-img {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    margin-right: 50px;
+}
+
+.CCA-heading {
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+}
+
+.CCA-txt{
+    padding: 0;
+    margin-top: 0;
+}
+
+.skills {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.ty {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: whitesmoke;
+}
