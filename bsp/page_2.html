@@ -1,0 +1,139 @@
+<!DOCTYPE html><html lang="zh"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>摘要与议程</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script><style>
+        body {width: 1280px; min-height: 720px; margin: 0;
+            padding: 0;}
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            position: relative;
+        }
+        .geometric-shape {
+            position: absolute;
+            opacity: 0.1;
+            border-radius: 50%;
+        }
+        .agenda-item {
+            transition: all 0.3s ease;
+        }
+        .agenda-item:hover {
+            transform: translateX(10px);
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container bg-gradient-to-br from-blue-900 to-blue-800 text-white relative overflow-hidden">
+<!-- 装饰性几何图形 -->
+<div class="geometric-shape bg-blue-400" style="width: 400px; height: 400px; top: -100px; left: -100px;"></div>
+<div class="geometric-shape bg-red-400" style="width: 300px; height: 300px; bottom: -50px; right: -50px;"></div>
+<!-- 内容容器 -->
+<div class="absolute inset-0 flex flex-col px-16 py-12 z-10">
+<!-- 标题区域 -->
+<div class="mb-8">
+<h1 class="text-4xl font-bold tracking-tight">摘要与议程</h1>
+<div class="w-20 h-1 bg-red-500 mt-3"></div>
+</div>
+<!-- 主要内容区域 - 两列布局 -->
+<div class="flex flex-1">
+<!-- 摘要部分 -->
+<div class="w-1/2 pr-8">
+<h2 class="text-2xl font-semibold mb-4 flex items-center">
+<i class="fas fa-file-alt text-red-400 mr-3"></i>摘要
+                    </h2>
+<div class="bg-blue-800 bg-opacity-50 p-6 rounded-lg">
+<p class="mb-4 text-lg">本报告旨在深入剖析2025年美国新政府&#34;美国优先&#34;外交政策对加拿大、欧盟（EU）与东南亚国家联盟（ASEAN）的深远影响。</p>
+<p class="text-lg">报告认为，美国的单边主义路径已成为一个强效催化剂，迫使这些关键伙伴对其外交与经济政策进行根本性的重新校准。</p>
+</div>
+<div class="mt-6">
+<h3 class="text-xl font-semibold mb-3">核心论点</h3>
+<ul class="space-y-3">
+<li class="flex items-start">
+<i class="fas fa-angle-right text-red-400 mt-1.5 mr-2"></i>
+<span>美国&#34;美国优先&#34;不仅是暂时性干扰，更是一种<span class="text-red-400 font-semibold">系统性挑战</span></span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-angle-right text-red-400 mt-1.5 mr-2"></i>
+<span>加拿大、欧盟与东盟被迫制定全新的、更具<span class="text-red-400 font-semibold">自主性</span>的长期战略</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-angle-right text-red-400 mt-1.5 mr-2"></i>
+<span>这些战略因各地区的<span class="text-red-400 font-semibold">地缘、经济和制度现实</span>而大相径庭</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- 议程部分 -->
+<div class="w-1/2 pl-8 border-l border-blue-600">
+<h2 class="text-2xl font-semibold mb-4 flex items-center">
+<i class="fas fa-tasks text-red-400 mr-3"></i>议程
+                    </h2>
+<div class="space-y-4">
+<div class="agenda-item flex items-center">
+<div class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center mr-4">
+<span class="font-bold">1</span>
+</div>
+<div>
+<h3 class="font-semibold">&#34;美国优先&#34;学说</h3>
+<p class="text-gray-300 text-sm">解析美国新外交与经济政策的核心原则</p>
+</div>
+</div>
+<div class="agenda-item flex items-center">
+<div class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center mr-4">
+<span class="font-bold">2</span>
+</div>
+<div>
+<h3 class="font-semibold">加拿大的回应</h3>
+<p class="text-gray-300 text-sm">高压下的&#34;战略不可或缺性&#34;</p>
+</div>
+</div>
+<div class="agenda-item flex items-center">
+<div class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center mr-4">
+<span class="font-bold">3</span>
+</div>
+<div>
+<h3 class="font-semibold">欧盟的回应</h3>
+<p class="text-gray-300 text-sm">在分歧中求索&#34;战略自主&#34;</p>
+</div>
+</div>
+<div class="agenda-item flex items-center">
+<div class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center mr-4">
+<span class="font-bold">4</span>
+</div>
+<div>
+<h3 class="font-semibold">东盟的回应</h3>
+<p class="text-gray-300 text-sm">竞争中心的&#34;多向结盟&#34;与对冲艺术</p>
+</div>
+</div>
+<div class="agenda-item flex items-center">
+<div class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center mr-4">
+<span class="font-bold">5</span>
+</div>
+<div>
+<h3 class="font-semibold">比较分析</h3>
+<p class="text-gray-300 text-sm">殊途同归的战略逻辑</p>
+</div>
+</div>
+<div class="agenda-item flex items-center">
+<div class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center mr-4">
+<span class="font-bold">6</span>
+</div>
+<div>
+<h3 class="font-semibold">结论</h3>
+<p class="text-gray-300 text-sm">动荡时代中的伙伴关系再校准</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 页码 -->
+<div class="absolute bottom-4 right-6 text-sm text-gray-400">
+                2 / 17
+            </div>
+</div>
+</div>
+
+</body></html>

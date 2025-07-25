@@ -1,0 +1,181 @@
+<!DOCTYPE html><html lang="zh"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>平衡的艺术：东盟的&#34;多向结盟&#34;战略</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script><style>
+        body {width: 1280px; min-height: 720px; margin: 0;
+            padding: 0;}
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            position: relative;
+        }
+        .geometric-shape {
+            position: absolute;
+            opacity: 0.1;
+            border-radius: 50%;
+        }
+        .strategy-item {
+            transition: all 0.3s ease;
+        }
+        .strategy-item:hover {
+            transform: translateX(5px);
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container bg-gradient-to-br from-blue-900 to-blue-800 text-white relative overflow-hidden">
+<!-- 装饰性几何图形 -->
+<div class="geometric-shape bg-blue-400" style="width: 400px; height: 400px; top: -100px; left: -100px;"></div>
+<div class="geometric-shape bg-red-400" style="width: 300px; height: 300px; bottom: -50px; right: -50px;"></div>
+<div class="geometric-shape bg-yellow-400" style="width: 200px; height: 200px; top: 40%; right: 10%; transform: translateY(-50%);"></div>
+<!-- 内容容器 -->
+<div class="absolute inset-0 flex flex-col px-16 py-12 z-10">
+<!-- 标题区域 -->
+<div class="mb-6">
+<h1 class="text-4xl font-bold tracking-tight">平衡的艺术：东盟的&#34;多向结盟&#34;战略</h1>
+<div class="w-20 h-1 bg-red-500 mt-3"></div>
+</div>
+<!-- 主要内容区域 -->
+<div class="flex flex-1">
+<!-- 左侧：概念与策略 -->
+<div class="w-1/2 pr-8">
+<div class="mb-6">
+<h2 class="text-2xl font-semibold mb-3 flex items-center">
+<i class="fas fa-balance-scale text-yellow-500 mr-3"></i>对冲战略核心
+                        </h2>
+<p class="text-lg mb-4">
+                            东盟选择<span class="text-yellow-400 font-semibold">&#34;对冲&#34;</span>或<span class="text-yellow-400 font-semibold">&#34;多向结盟&#34;</span>策略，在避免与任何单一强国过度捆绑的同时，保持战略灵活性。
+                        </p>
+</div>
+<div class="mb-6">
+<h2 class="text-2xl font-semibold mb-3 flex items-center">
+<i class="fas fa-network-wired text-yellow-500 mr-3"></i>关键策略要素
+                        </h2>
+<div class="space-y-4">
+<div class="strategy-item bg-blue-800 bg-opacity-50 p-4 rounded-lg">
+<h3 class="font-semibold text-lg flex items-center">
+<i class="fas fa-arrows-alt text-red-400 mr-2"></i>主动的&#34;全方位融入&#34;
+                                    </h3>
+<p class="ml-7">将中美都深度嵌入由东盟主导的多边机制（如东盟地区论坛），增加任何一方胁迫的成本。</p>
+</div>
+<div class="strategy-item bg-blue-800 bg-opacity-50 p-4 rounded-lg">
+<h3 class="font-semibold text-lg flex items-center">
+<i class="fas fa-bullseye text-red-400 mr-2"></i>&#34;东盟中心地位&#34;
+                                    </h3>
+<p class="ml-7">坚持东盟在地区架构中的中心协调者角色，维护地区自主性。</p>
+</div>
+<div class="strategy-item bg-blue-800 bg-opacity-50 p-4 rounded-lg">
+<h3 class="font-semibold text-lg flex items-center">
+<i class="fas fa-handshake text-red-400 mr-2"></i>经济多元化的体现
+                                    </h3>
+<p class="ml-7">既参与美国主导的IPEF，也深度融入中国推动的RCEP，同时深化与日、欧等伙伴的关系。</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 右侧：视觉与美国困境 -->
+<div class="w-1/2 pl-8 flex flex-col">
+<!-- 可视化区域 -->
+<div class="flex-1 relative" id="visualization-container" data-sk-source-container="chart" data-sk-source-id="RTK55K" data-sk-source-type="pdf">
+<script>
+                            // 使用D3.js创建一个简单的可视化，展示东盟的"多向结盟"战略
+                            document.addEventListener('DOMContentLoaded', function() {
+                                const width = 500;
+                                const height = 300;
+                                
+                                const svg = d3.select("#visualization-container")
+                                    .append("svg")
+                                    .attr("width", width)
+                                    .attr("height", height)
+                                    .attr("class", "mx-auto");
+                                
+                                // 节点数据
+                                const nodes = [
+                                    {id: "ASEAN", name: "东盟", x: width/2, y: height/2, r: 50, color: "#EAB308"},
+                                    {id: "US", name: "美国", x: width/4, y: height/3, r: 40, color: "#3B82F6"},
+                                    {id: "China", name: "中国", x: 3*width/4, y: height/3, r: 40, color: "#EF4444"},
+                                    {id: "EU", name: "欧盟", x: width/4, y: 2*height/3, r: 35, color: "#2563EB"},
+                                    {id: "Japan", name: "日本", x: 3*width/4, y: 2*height/3, r: 30, color: "#10B981"}
+                                ];
+                                
+                                // 链接数据
+                                const links = [
+                                    {source: "ASEAN", target: "US", value: 1},
+                                    {source: "ASEAN", target: "China", value: 1},
+                                    {source: "ASEAN", target: "EU", value: 1},
+                                    {source: "ASEAN", target: "Japan", value: 1}
+                                ];
+                                
+                                // 绘制连接线
+                                svg.selectAll(".link")
+                                    .data(links)
+                                    .enter()
+                                    .append("line")
+                                    .attr("class", "link")
+                                    .attr("x1", d => nodes.find(n => n.id === d.source).x)
+                                    .attr("y1", d => nodes.find(n => n.id === d.source).y)
+                                    .attr("x2", d => nodes.find(n => n.id === d.target).x)
+                                    .attr("y2", d => nodes.find(n => n.id === d.target).y)
+                                    .style("stroke", "#FFFFFF")
+                                    .style("stroke-opacity", 0.5)
+                                    .style("stroke-width", 2);
+                                
+                                // 绘制节点
+                                const nodeGroups = svg.selectAll(".node")
+                                    .data(nodes)
+                                    .enter()
+                                    .append("g");
+                                
+                                nodeGroups.append("circle")
+                                    .attr("class", "node")
+                                    .attr("cx", d => d.x)
+                                    .attr("cy", d => d.y)
+                                    .attr("r", d => d.r)
+                                    .style("fill", d => d.color)
+                                    .style("opacity", 0.8);
+                                
+                                nodeGroups.append("text")
+                                    .attr("x", d => d.x)
+                                    .attr("y", d => d.y)
+                                    .attr("text-anchor", "middle")
+                                    .attr("dy", "0.3em")
+                                    .style("fill", "#FFFFFF")
+                                    .style("font-size", d => d.id === "ASEAN" ? "16px" : "14px")
+                                    .style("font-weight", d => d.id === "ASEAN" ? "bold" : "normal")
+                                    .text(d => d.name);
+                            });
+                        </script>
+</div>
+<!-- 美国的困境 -->
+<div class="bg-blue-700 bg-opacity-50 p-5 rounded-lg mt-4">
+<h3 class="text-xl font-semibold mb-3 flex items-center">
+<i class="fas fa-exclamation-triangle text-yellow-500 mr-2"></i>美国的困境
+                        </h3>
+<p class="mb-3">
+                            美国经济战略的缺失正在严重削弱其安全伙伴的吸引力。
+                        </p>
+<p class="text-yellow-200 font-semibold">
+                            东盟国家无法为了一个经济上贡献有限的安全伙伴（美国），而疏远其主要经济伙伴（中国）。
+                        </p>
+<div class="mt-3 p-3 bg-blue-900 bg-opacity-50 rounded">
+<p class="text-sm italic">
+<i class="fas fa-quote-left text-gray-400 mr-1"></i>
+                                任何成功的美国印太战略都必须包含强有力的经济组成部分。
+                                <i class="fas fa-quote-right text-gray-400 ml-1"></i>
+</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 页码 -->
+<div class="absolute bottom-4 right-6 text-sm text-gray-400">
+                12 / 17
+            </div>
+</div>
+</div>
+
+</body></html>

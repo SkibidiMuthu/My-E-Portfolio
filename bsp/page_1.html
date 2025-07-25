@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="zh"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>航向单边主义</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script><style>
+        body {width: 1280px; min-height: 720px; margin: 0;
+            padding: 0;}
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            position: relative;
+        }
+        .geometric-shape {
+            position: absolute;
+            opacity: 0.1;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container bg-gradient-to-br from-blue-900 to-blue-800 text-white relative overflow-hidden">
+<!-- 装饰性几何图形 -->
+<div class="geometric-shape bg-blue-400" style="width: 400px; height: 400px; top: -100px; left: -100px;"></div>
+<div class="geometric-shape bg-red-400" style="width: 300px; height: 300px; bottom: -50px; right: -50px;"></div>
+<div class="geometric-shape bg-gray-400" style="width: 200px; height: 200px; top: 50%; left: 70%; transform: translateY(-50%);"></div>
+<!-- 内容容器 -->
+<div class="absolute inset-0 flex flex-col justify-center items-center px-16 z-10">
+<!-- 标题区域 -->
+<div class="text-center mb-12">
+<h1 class="text-5xl font-bold tracking-tight mb-6">航向单边主义</h1>
+<h2 class="text-3xl mb-8">加拿大、欧盟与东盟对美国新外交政策的战略回应</h2>
+<div class="w-24 h-1 bg-red-500 mx-auto mb-8"></div>
+<p class="text-xl">一份基于深度研究的分析报告</p>
+</div>
+<!-- 图标元素：代表各国关系 -->
+<div class="flex justify-center items-center space-x-12 my-12">
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 bg-blue-700 rounded-full flex items-center justify-center mb-2">
+<i class="fas fa-flag-usa text-white text-2xl"></i>
+</div>
+<p>美国</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mb-2">
+<i class="fas fa-leaf text-white text-2xl"></i>
+</div>
+<p>加拿大</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-2">
+<i class="fas fa-star text-white text-2xl"></i>
+</div>
+<p>欧盟</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center mb-2">
+<i class="fas fa-globe-asia text-white text-2xl"></i>
+</div>
+<p>东盟</p>
+</div>
+</div>
+<!-- 连接线：表示关系 -->
+<div class="relative w-full max-w-md h-2 mb-12">
+<div class="absolute top-0 left-0 right-0 h-0.5 bg-gray-400"></div>
+<div class="absolute top-0 left-1/4 w-0.5 h-8 -translate-x-1/2 bg-gray-400"></div>
+<div class="absolute top-0 left-2/4 w-0.5 h-8 -translate-x-1/2 bg-gray-400"></div>
+<div class="absolute top-0 left-3/4 w-0.5 h-8 -translate-x-1/2 bg-gray-400"></div>
+</div>
+</div>
+<!-- 底部信息 -->
+<div class="absolute bottom-8 left-0 right-0 text-center">
+<p class="text-gray-300">关君义、王博宇</p>
+</div>
+</div>
+
+</body></html>

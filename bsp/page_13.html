@@ -1,0 +1,231 @@
+<!DOCTYPE html><html lang="zh"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>比较分析：共同挑战与差异化回应</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script><style>
+        body {width: 1280px; min-height: 720px; margin: 0;
+            padding: 0;}
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            position: relative;
+        }
+        .geometric-shape {
+            position: absolute;
+            opacity: 0.1;
+            border-radius: 50%;
+        }
+        .region-card {
+            transition: all 0.3s ease;
+        }
+        .region-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container bg-gradient-to-br from-blue-900 to-blue-800 text-white relative overflow-hidden">
+<!-- 装饰性几何图形 -->
+<div class="geometric-shape bg-blue-400" style="width: 400px; height: 400px; top: -100px; left: -100px;"></div>
+<div class="geometric-shape bg-red-400" style="width: 300px; height: 300px; bottom: -50px; right: -50px;"></div>
+<!-- 内容容器 -->
+<div class="absolute inset-0 flex flex-col px-16 py-12 z-10">
+<!-- 标题区域 -->
+<div class="mb-6">
+<h1 class="text-4xl font-bold tracking-tight">比较分析：共同挑战与差异化回应</h1>
+<div class="w-20 h-1 bg-red-500 mt-3"></div>
+</div>
+<!-- 共同挑战 -->
+<div class="mb-6">
+<h2 class="text-2xl font-semibold mb-3 flex items-center">
+<i class="fas fa-exclamation-triangle text-yellow-400 mr-3"></i>共同挑战
+                </h2>
+<div class="bg-blue-800 bg-opacity-50 p-4 rounded-lg">
+<p class="text-lg">面对一个行为模式难以预测且奉行交易主义的美国，其政策正在动摇以规则为基础的国际秩序。</p>
+</div>
+</div>
+<!-- 差异化回应 -->
+<div class="mb-6">
+<h2 class="text-2xl font-semibold mb-3 flex items-center">
+<i class="fas fa-reply-all text-green-400 mr-3"></i>差异化回应
+                </h2>
+<div class="flex justify-between space-x-4">
+<!-- 加拿大 -->
+<div class="region-card bg-blue-700 bg-opacity-50 p-4 rounded-lg flex-1">
+<div class="flex items-center mb-2">
+<div class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center mr-3">
+<i class="fas fa-leaf text-white"></i>
+</div>
+<h3 class="text-xl font-semibold">加拿大 (极端不对称)</h3>
+</div>
+<p class="mb-2"><span class="text-red-400 font-semibold">战略困境：</span>战略回旋空间最有限</p>
+<p class="mb-2"><span class="text-red-400 font-semibold">应对策略：</span>在现有体系内通过发挥利基价值寻求生存</p>
+<p><span class="text-red-400 font-semibold">目标：</span>追求&#34;战略不可或缺性&#34;</p>
+</div>
+<!-- 欧盟 -->
+<div class="region-card bg-blue-700 bg-opacity-50 p-4 rounded-lg flex-1">
+<div class="flex items-center mb-2">
+<div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center mr-3">
+<i class="fas fa-star text-white"></i>
+</div>
+<h3 class="text-xl font-semibold">欧盟 (碎片化巨擘)</h3>
+</div>
+<p class="mb-2"><span class="text-red-400 font-semibold">战略困境：</span>经济体量巨大但政治碎片化</p>
+<p class="mb-2"><span class="text-red-400 font-semibold">应对策略：</span>构想&#34;战略自主&#34;，但受内部分歧掣肘</p>
+<p><span class="text-red-400 font-semibold">目标：</span>增强&#34;自主选择并塑造周边环境的能力&#34;</p>
+</div>
+<!-- 东盟 -->
+<div class="region-card bg-blue-700 bg-opacity-50 p-4 rounded-lg flex-1">
+<div class="flex items-center mb-2">
+<div class="w-10 h-10 bg-yellow-600 rounded-full flex items-center justify-center mr-3">
+<i class="fas fa-globe-asia text-white"></i>
+</div>
+<h3 class="text-xl font-semibold">东盟 (集体外交)</h3>
+</div>
+<p class="mb-2"><span class="text-red-400 font-semibold">战略困境：</span>缺乏直接对抗的实力</p>
+<p class="mb-2"><span class="text-red-400 font-semibold">应对策略：</span>依赖集体外交、制度规范和战略不结盟</p>
+<p><span class="text-red-400 font-semibold">目标：</span>追求&#34;对冲/多向结盟&#34;战略</p>
+</div>
+</div>
+</div>
+<!-- 囚徒困境 -->
+<div>
+<h2 class="text-2xl font-semibold mb-3 flex items-center">
+<i class="fas fa-chess-board text-purple-400 mr-3"></i>中等强国的&#34;囚徒困境&#34;
+                </h2>
+<div class="flex">
+<!-- 左侧：概念说明 -->
+<div class="w-1/2 pr-4">
+<div class="bg-blue-800 bg-opacity-50 p-4 rounded-lg">
+<p class="mb-3"><span class="text-yellow-400 font-semibold">美国的策略：</span>绕开多边框架，向每个国家单独提供双边交易的机会，为个别国家创造&#34;背叛&#34;集体行动的诱因。</p>
+<p class="mb-3"><span class="text-yellow-400 font-semibold">表现：</span></p>
+<ul class="list-disc list-inside pl-2">
+<li>欧盟：成员国难以形成合力对抗美国的分化策略</li>
+<li>东盟：成员国在实际操作中也常常寻求与华盛顿的单独谈判</li>
+</ul>
+</div>
+</div>
+<!-- 右侧：可视化 -->
+<div class="w-1/2 pl-4">
+<div class="bg-white bg-opacity-10 p-4 rounded-lg h-48" id="prisoners-dilemma" data-sk-source-container="chart" data-sk-source-id="RTK55P" data-sk-source-type="pdf">
+<!-- D3.js visualization will be inserted here -->
+</div>
+</div>
+</div>
+</div>
+<!-- 页码 -->
+<div class="absolute bottom-4 right-6 text-sm text-gray-400">
+                13 / 17
+            </div>
+</div>
+</div>
+<script>
+        // Simple D3.js visualization for Prisoner's Dilemma
+        document.addEventListener('DOMContentLoaded', function() {
+            const svg = d3.select("#prisoners-dilemma")
+                .append("svg")
+                .attr("width", "100%")
+                .attr("height", "100%")
+                .attr("viewBox", "0 0 400 150");
+            
+            // Define the dilemma
+            const dilemma = [
+                {region: "加拿大", x: 100, y: 75},
+                {region: "欧盟", x: 200, y: 75},
+                {region: "东盟", x: 300, y: 75}
+            ];
+            
+            // Add title
+            svg.append("text")
+                .attr("x", 200)
+                .attr("y", 25)
+                .attr("text-anchor", "middle")
+                .attr("fill", "white")
+                .style("font-size", "14px")
+                .text("美国的分化策略");
+            
+            // Add subtitle
+            svg.append("text")
+                .attr("x", 200)
+                .attr("y", 45)
+                .attr("text-anchor", "middle")
+                .attr("fill", "white")
+                .style("font-size", "12px")
+                .text("利用双边交易创造集体行动的困境");
+            
+            // Draw nodes
+            const nodes = svg.selectAll("circle")
+                .data(dilemma)
+                .enter()
+                .append("circle")
+                .attr("cx", d => d.x)
+                .attr("cy", d => d.y)
+                .attr("r", 30)
+                .attr("fill", (d, i) => {
+                    const colors = ["#DC2626", "#3B82F6", "#D97706"];
+                    return colors[i];
+                })
+                .attr("opacity", 0.8);
+            
+            // Add labels
+            svg.selectAll("text.label")
+                .data(dilemma)
+                .enter()
+                .append("text")
+                .attr("class", "label")
+                .attr("x", d => d.x)
+                .attr("y", d => d.y + 5)
+                .attr("text-anchor", "middle")
+                .attr("fill", "white")
+                .style("font-size", "12px")
+                .text(d => d.region);
+            
+            // Draw US at the top
+            svg.append("circle")
+                .attr("cx", 200)
+                .attr("cy", 30)
+                .attr("r", 25)
+                .attr("fill", "#059669")
+                .attr("opacity", 0.8);
+            
+            svg.append("text")
+                .attr("x", 200)
+                .attr("y", 35)
+                .attr("text-anchor", "middle")
+                .attr("fill", "white")
+                .style("font-size", "12px")
+                .text("美国");
+            
+            // Draw lines from US to each region
+            svg.selectAll("line")
+                .data(dilemma)
+                .enter()
+                .append("line")
+                .attr("x1", 200)
+                .attr("y1", 40)
+                .attr("x2", d => d.x)
+                .attr("y2", d => d.y - 30)
+                .attr("stroke", "white")
+                .attr("stroke-width", 2)
+                .attr("stroke-dasharray", "5,5");
+            
+            // Add "bribery" labels on lines
+            svg.selectAll("text.bribery")
+                .data(dilemma)
+                .enter()
+                .append("text")
+                .attr("class", "bribery")
+                .attr("x", d => 200 + (d.x - 200) * 0.5)
+                .attr("y", d => 40 + (d.y - 40) * 0.5 - 10)
+                .attr("text-anchor", "middle")
+                .attr("fill", "#FBBF24")
+                .style("font-size", "10px")
+                .text("双边交易");
+        });
+    </script>
+
+</body></html>

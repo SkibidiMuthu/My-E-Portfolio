@@ -1,0 +1,252 @@
+<!DOCTYPE html><html lang="zh"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>欧盟的险阻：内部分歧与地缘政治博弈</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script><style>
+        body {width: 1280px; min-height: 720px; margin: 0;
+            padding: 0;}
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            position: relative;
+        }
+        .geometric-shape {
+            position: absolute;
+            opacity: 0.1;
+            border-radius: 50%;
+        }
+        .card {
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container bg-gradient-to-br from-blue-900 to-blue-800 text-white relative overflow-hidden">
+<!-- 装饰性几何图形 -->
+<div class="geometric-shape bg-blue-400" style="width: 400px; height: 400px; top: -100px; left: -100px;"></div>
+<div class="geometric-shape bg-red-400" style="width: 300px; height: 300px; bottom: -50px; right: -50px;"></div>
+<!-- 内容容器 -->
+<div class="absolute inset-0 flex flex-col px-16 py-12 z-10">
+<!-- 标题区域 -->
+<div class="mb-6">
+<h1 class="text-4xl font-bold tracking-tight">欧盟的险阻：内部分歧与地缘政治博弈</h1>
+<div class="w-20 h-1 bg-red-500 mt-3"></div>
+</div>
+<!-- 主要内容区域 -->
+<div class="flex flex-1 space-x-8">
+<!-- 左侧：内部分歧 -->
+<div class="w-1/2">
+<h2 class="text-2xl font-semibold mb-4 flex items-center">
+<i class="fas fa-puzzle-piece text-red-400 mr-3"></i>战略自主的最大挑战：内部分歧
+                    </h2>
+<div class="space-y-4">
+<!-- 安全防务分歧 -->
+<div class="card bg-blue-800 bg-opacity-50 p-5 rounded-lg">
+<h3 class="text-xl font-semibold mb-2 flex items-center">
+<i class="fas fa-shield-alt text-yellow-500 mr-2"></i>安全防务分歧
+                            </h3>
+<div class="flex space-x-4">
+<div class="w-1/2 bg-blue-700 bg-opacity-50 p-3 rounded">
+<h4 class="font-semibold text-blue-300">大西洋主义派</h4>
+<p class="text-sm">波兰、北欧等视北约和美国为安全基石</p>
+</div>
+<div class="w-1/2 bg-blue-700 bg-opacity-50 p-3 rounded">
+<h4 class="font-semibold text-blue-300">戴高乐主义派</h4>
+<p class="text-sm">法国力主建立独立的欧洲防务能力</p>
+</div>
+</div>
+</div>
+<!-- 经济政策博弈 -->
+<div class="card bg-blue-800 bg-opacity-50 p-5 rounded-lg">
+<h3 class="text-xl font-semibold mb-2 flex items-center">
+<i class="fas fa-chart-line text-green-500 mr-2"></i>经济政策博弈
+                            </h3>
+<div class="flex space-x-4">
+<div class="w-1/2 bg-blue-700 bg-opacity-50 p-3 rounded">
+<h4 class="font-semibold text-blue-300">保护主义</h4>
+<p class="text-sm">法国倾向于国家干预</p>
+</div>
+<div class="w-1/2 bg-blue-700 bg-opacity-50 p-3 rounded">
+<h4 class="font-semibold text-blue-300">自由市场</h4>
+<p class="text-sm">德国、荷兰倾向于维护开放经济</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 右侧：地缘政治博弈 -->
+<div class="w-1/2">
+<h2 class="text-2xl font-semibold mb-4 flex items-center">
+<i class="fas fa-chess text-red-400 mr-3"></i>地缘政治博弈的中心
+                    </h2>
+<div class="mb-5">
+<h3 class="text-xl font-semibold mb-2">双重压力：欧盟被夹在中美之间</h3>
+<!-- 美国压力 -->
+<div class="flex items-center mb-3">
+<div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center mr-3">
+<i class="fas fa-flag-usa text-white text-xl"></i>
+</div>
+<div>
+<h4 class="font-semibold">美国</h4>
+<p class="text-sm">利用关税和安全杠杆，迫使欧盟一同对抗中国</p>
+</div>
+</div>
+<!-- 中国压力 -->
+<div class="flex items-center mb-3">
+<div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center mr-3">
+<i class="fas fa-dragon text-white text-xl"></i>
+</div>
+<div>
+<h4 class="font-semibold">中国</h4>
+<p class="text-sm">鼓励欧盟追求&#34;战略自主&#34;，将自己定位为多边贸易体系的维护者</p>
+</div>
+</div>
+</div>
+<!-- 两难处境可视化 -->
+<div class="bg-blue-800 bg-opacity-50 p-5 rounded-lg">
+<h3 class="text-xl font-semibold mb-3">两难处境：不可能的脱钩，难以置信的合作</h3>
+<div class="h-32 relative mb-3" id="dilemma-visualization">
+<!-- D3.js visualization will be inserted here -->
+</div>
+<p class="text-sm">欧盟既无法完全与美国结盟而损害其与中国的经济利益，也无法倒向中国而危及其安全关系</p>
+</div>
+<!-- 应对策略 -->
+<div class="mt-4 bg-green-800 bg-opacity-30 p-4 rounded-lg border-l-4 border-green-500">
+<h3 class="text-lg font-semibold flex items-center">
+<i class="fas fa-lightbulb text-yellow-400 mr-2"></i>应对策略：去风险化
+                        </h3>
+<p class="text-sm">在关键领域减少对华依赖，同时在其他领域寻求合作</p>
+</div>
+</div>
+</div>
+<!-- 页码 -->
+<div class="absolute bottom-4 right-6 text-sm text-gray-400">
+                10 / 17
+            </div>
+</div>
+</div>
+<script>
+        // D3.js visualization for the EU's dilemma
+        document.addEventListener('DOMContentLoaded', function() {
+            const width = document.getElementById('dilemma-visualization').clientWidth;
+            const height = document.getElementById('dilemma-visualization').clientHeight;
+            
+            const svg = d3.select("#dilemma-visualization")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height);
+            
+            // Define the positions
+            const centerX = width / 2;
+            const centerY = height / 2;
+            const radius = Math.min(width, height) / 3;
+            
+            // Draw the central EU circle
+            svg.append("circle")
+                .attr("cx", centerX)
+                .attr("cy", centerY)
+                .attr("r", radius * 0.7)
+                .attr("fill", "#3B82F6")
+                .attr("opacity", 0.7)
+                .attr("stroke", "#FFFFFF")
+                .attr("stroke-width", 2);
+            
+            // Add EU text
+            svg.append("text")
+                .attr("x", centerX)
+                .attr("y", centerY)
+                .attr("text-anchor", "middle")
+                .attr("dominant-baseline", "middle")
+                .attr("fill", "#FFFFFF")
+                .attr("font-size", "14px")
+                .attr("font-weight", "bold")
+                .text("欧盟");
+            
+            // Draw the US circle (left)
+            svg.append("circle")
+                .attr("cx", centerX - radius)
+                .attr("cy", centerY)
+                .attr("r", radius * 0.5)
+                .attr("fill", "#EF4444")
+                .attr("opacity", 0.7)
+                .attr("stroke", "#FFFFFF")
+                .attr("stroke-width", 1);
+            
+            // Add US text
+            svg.append("text")
+                .attr("x", centerX - radius)
+                .attr("y", centerY)
+                .attr("text-anchor", "middle")
+                .attr("dominant-baseline", "middle")
+                .attr("fill", "#FFFFFF")
+                .attr("font-size", "12px")
+                .attr("font-weight", "bold")
+                .text("美国");
+            
+            // Draw the China circle (right)
+            svg.append("circle")
+                .attr("cx", centerX + radius)
+                .attr("cy", centerY)
+                .attr("r", radius * 0.5)
+                .attr("fill", "#EF4444")
+                .attr("opacity", 0.7)
+                .attr("stroke", "#FFFFFF")
+                .attr("stroke-width", 1);
+            
+            // Add China text
+            svg.append("text")
+                .attr("x", centerX + radius)
+                .attr("y", centerY)
+                .attr("text-anchor", "middle")
+                .attr("dominant-baseline", "middle")
+                .attr("fill", "#FFFFFF")
+                .attr("font-size", "12px")
+                .attr("font-weight", "bold")
+                .text("中国");
+            
+            // Draw connecting lines
+            svg.append("line")
+                .attr("x1", centerX - radius + radius * 0.5)
+                .attr("y1", centerY)
+                .attr("x2", centerX - radius * 0.7)
+                .attr("y2", centerY)
+                .attr("stroke", "#FFFFFF")
+                .attr("stroke-width", 2)
+                .attr("stroke-dasharray", "5,5");
+            
+            svg.append("line")
+                .attr("x1", centerX + radius - radius * 0.5)
+                .attr("y1", centerY)
+                .attr("x2", centerX + radius * 0.7)
+                .attr("y2", centerY)
+                .attr("stroke", "#FFFFFF")
+                .attr("stroke-width", 2)
+                .attr("stroke-dasharray", "5,5");
+            
+            // Add pressure labels
+            svg.append("text")
+                .attr("x", centerX - radius * 0.75)
+                .attr("y", centerY - 15)
+                .attr("text-anchor", "middle")
+                .attr("fill", "#FFFFFF")
+                .attr("font-size", "10px")
+                .text("关税与安全压力");
+            
+            svg.append("text")
+                .attr("x", centerX + radius * 0.75)
+                .attr("y", centerY - 15)
+                .attr("text-anchor", "middle")
+                .attr("fill", "#FFFFFF")
+                .attr("font-size", "10px")
+                .text("多边贸易体系维护者");
+        });
+    </script>
+
+</body></html>
